@@ -1,25 +1,4 @@
---[[----------------------------------------------------------------------------
 
-  Application Name:
-  CropRectify
-
-  Summary:
-  Example of Image.cropRectify
-
-  Description:
-  This sample uses a Image.cropRectify to crop and rectify a region of an
-  input image. The selected region can be seen overlayed in the original
-  image after two seconds the viewer is updated and the resulting image
-  is presented. Four test examples are available, and will be show in sequence.
-
-  How to Run:
-  Starting this sample is possible either by running the app (F5) or
-  debugging (F7+F10). Results can be seen in the viewer on the DevicePage.
-  Restarting the Sample may be necessary to show results after loading the webpage.
-  To run this Sample a device with SICK Algorithm API and AppEngine >= V2.11.0 is
-  required.
-  
-------------------------------------------------------------------------------]]
 --Start of Global Scope---------------------------------------------------------
 
 print('AppEngine Version: ' .. Engine.getVersion())
