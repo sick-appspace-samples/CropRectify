@@ -4,15 +4,12 @@
 print('AppEngine Version: ' .. Engine.getVersion())
 
 -- Create a viewer
-local v = View.create("viewer2D1")
+local v = View.create()
 
-local shapeDec=View.ShapeDecoration.create()
-shapeDec:setLineColor(0, 255, 0, 255)
-shapeDec:setLineWidth(6)
+local shapeDec=View.ShapeDecoration.create():setLineColor(0, 255, 0, 255):setLineWidth(6)
 --End of Global Scope-----------------------------------------------------------
 
 --Start of Function and Event Scope---------------------------------------------
---@handleOnStarted()
 local function handleOnStarted()
   --select the test you want to run
   for test = 1, 4 do
@@ -45,8 +42,8 @@ local function handleOnStarted()
   
     -- Display the input image
     v:clear()
-    v:addImage(image, nil, "imageID")
-    v:addShape(shape, shapeDec,"shapeID", "imageID")
+    v:addImage(image)
+    v:addShape(shape, shapeDec)
     v:present()
     Script.sleep(2000) -- for demonstration purpose only
     
